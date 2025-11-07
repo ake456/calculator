@@ -1,32 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
+    <title>قائمة المهام</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="display" readonly>
-        <button onclick="addToDisplay('7')">7</button>
-        <button onclick="addToDisplay('8')">8</button>
-        <button onclick="addToDisplay('9')">9</button>
-        <button class="operator" onclick="addToDisplay('+')">+</button>
-        <button onclick="addToDisplay('4')">4</button>
-        <button onclick="addToDisplay('5')">5</button>
-        <button onclick="addToDisplay('6')">6</button>
-        <button class="operator" onclick="addToDisplay('-')"> - </button>
-        <button onclick="addToDisplay('1')">1</button>
-        <button onclick="addToDisplay('2')">2</button>
-        <button onclick="addToDisplay('3')">3</button>
-        <button class="operator" onclick="addToDisplay('*')">x</button>
-        <button onclick="addToDisplay('0')">0</button>
-        <button onclick="clearDisplay()" class="clear">C</button>
-        <button onclick="calculate()" class="equals">=</button>
-        <button class="operator" onclick="addToDisplay('/')">/</button>
+
+    <div class="container">
+        <h1>قائمة المهام </h1>
+        <div>
+            <input type="text" id="taskInput" placeholder="ادخل مهمتك">
+            <button id="btn" onclick="addTask()">اضافة مهمة</button>
+        </div>
+        <div id="taskList"></div>
     </div>
-    
+
     <script src="code.js"></script>
+    
 </body>
 </html>
